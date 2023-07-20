@@ -4,74 +4,108 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/global.css">
-
+    <link rel="icon" href="./assets/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <title>Portifólio</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Micael A. Dos Santos</title>
 </head>
 
 <body>
-    <header>
-        <div>
+    <header class="header_container flex">
+        <div class="header_content">
             <div>
-                <a href="#">Universe</a>
+                <a href="#">Início</a>
             </div>
 
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
+            <div class="flex">
+                <nav class="menu">
+                    <ul class="menu_list flex">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </nav>
-
-                <label>
-                    <input type="checkbox" checked>
-                    <span></span>
+            </div>
+            
+            <div class="flex">
+                <label class="switch">
+                    <input type="checkbox" checked onclick="changeTheme()">
+                    <span class="slider round"></span>
                 </label>
             </div>
         </div>
     </header>
+    <main id="home">
+        <section class="home_header">
+            <h2>Tornando a vida digital mais real</h2>
+        </section>
 
-    <section>
-        <article>
-            <h4>Welcome to the New Universe</h4>
-            <h1>Different worlds for differents people</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
-                quisquam</p>
+        <section class="home_container">
+            <article class="home_content">
+                <h1>Micael A.</h1>
+                <h1>Dos Santos</h1>
+                <h2>Dev Full Stack Java</h2>
 
-            <a target="_blank" href="https://github.com/frizzly-mika">Explore</a>
-        </article>
-        <article>
-            <img src="" alt="">
-        </article>
-    </section>
+                <a class="btn" target="_blank" href="https://github.com/frizzly-mika">Explore mais</a>
+            </article>
+            <article class="home_content">
+                <img class="home_content__img" src="./assets/online-document-animate.svg" alt="Computador e arquivos animados">
+            </article>
+        </section>
 
-    <section>
-        <img alt="">
-        <article>
-            <h1>Who am I?</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
-                inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
-                deleniti modi sit laudantium totam!
-            </p>
+        <section id="about" class="about_container">
+            <img src="" alt="Foto de perfil">
+            <article class="about_content">
+                <h1>Sobre o Micael</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
+                    inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
+                    deleniti modi sit laudantium totam!
+                </p>
+            </article>
+        </section>
 
-            <div>
-                <a href="">Github</a>
-                <p>X Seguidores</p>
-                <p>Y Repositórios</p>
-            </div>
-        </article>
-    </section>
-    <footer>
-        Feito com 👺 por Yuri Oliveira - 2023
+        <section id="portfolio" class="portfolio_container">
+                <article>
+                    <h1>Portfólio</h1>
+                    <div>
+                        <img src="" alt="Foto de capa do projeto">
+                        <a href="">Projeto 1</a>
+                    </div>
+                    <div>
+                        <img src="" alt="Foto de capa do projeto">
+                        <a href="">Projeto 2</a>
+                    </div>
+                    <div>
+                        <img src="" alt="Foto de capa do projeto">
+                        <a href="">Projeto 3</a>
+                    </div>
+                </article>
+        </section>
+
+        <section id="contact" class="contact_container">
+            <article>
+                <h1>Contato</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div>
+                    <a href="">GitHub</a>
+                    <a href="">LinkedIn</a>
+                    <a href="">Email</a>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer class="flex">
+        &copy; 2023 Todos os direitos reservados por Micael A. Dos Santos
     </footer>
+
 </body>
 
 </html>
